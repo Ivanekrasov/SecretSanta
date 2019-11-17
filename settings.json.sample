@@ -18,17 +18,20 @@
     {
       "email": "secret@reindeer.com",
       "name" : "Secret Reindeer",
-      "sex"  : "M"
+      "sex"  : "M",
+      "pair": 1
     },
     {
       "email": "rudolph@reindeer.com",
       "name" : "Rudolph Reindeer",
-      "sex"  : "F"
+      "sex"  : "F",
+      "pair": 1
     },
     {
       "email": "dasher@reindeer.com",
       "name" : "Dasher Reindeer",
-      "sex"  : "M"
+      "sex"  : "M",
+      "pair": null
     }
   ]
 }

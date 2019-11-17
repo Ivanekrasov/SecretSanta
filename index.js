@@ -13,7 +13,7 @@ let default_options = settings.mail_options;
 default_options.attachments = templating.extract_images();
 
 let send_mail = function(pair) {
-  var mail_options = JSON.parse(JSON.stringify(default_options));
+  const mail_options = JSON.parse(JSON.stringify(default_options));
   mail_options.to = `${pair.sender.name} <${pair.sender.email}>`;
 
   mail_options.html = templating.fill_html({
@@ -29,10 +29,10 @@ let send_mail = function(pair) {
       console.log(`Message sent to ${mail_options.to}: ${info.response}`);
   });
 
-}
+};
 
 // Send ALL the emails!
-generator.generate(participants).forEach(send_mail)
+generator.generate(participants).forEach(send_mail);
 // if you want to see possible combinations comment the above line
 // and uncomment the line below:
-//console.log(generator.generate(participants).map((pair)=>(pair+"")))
+// console.log(generator.generate(participants).map((pair)=>(pair+"")));
